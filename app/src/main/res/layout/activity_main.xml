@@ -1,178 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="#007000"
-tools:context="pl.carpecodicem.soccerscorecounter.MainActivity">
-
-<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:layout_height="match_parent"
+    android:background="#007000"
+    tools:context="pl.carpecodicem.soccerscorecounter.MainActivity">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="@string/team_a"
-            android:textColor="#E0E0E0"
-            android:textSize="14sp" />
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/team_a_score"
-            android:layout_width="match_parent"
+            <TextView
+                style="@style/teamNameStyle"
+                android:text="@string/team_a" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                style="@style/teamScoreStyle"
+                android:text="0" />
+
+            <Button
+                style="@style/CustomButtonStyle"
+                android:onClick="addGoalForTeamA"
+                android:text="@string/goal" />
+
+            <TextView
+                android:id="@+id/team_a_foul"
+                style="@style/teamStatsStyle"
+                android:text="0" />
+
+            <Button
+                style="@style/CustomButtonStyle"
+                android:onClick="addFoulForTeamA"
+                android:text="@string/foul" />
+
+            <TextView
+                android:id="@+id/team_a_corner"
+                style="@style/teamStatsStyle"
+                android:text="0" />
+
+            <Button
+                style="@style/CustomButtonStyle"
+                android:layout_marginBottom="8dp"
+                android:onClick="addCornerForTeamA"
+                android:text="@string/corner" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:fontFamily="sans-serif-light"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="0"
-            android:textColor="#FFFFFF"
-            android:textSize="56sp"
-            android:textStyle="bold" />
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <Button
-            android:onClick="addGoalForTeamA"
-            android:text="@string/goal"
-            style="@style/CustomButtonStyle" />
+            <TextView
+                style="@style/teamNameStyle"
+                android:text="@string/team_b" />
 
-        <TextView
-            android:id="@+id/team_a_foul"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="20dp"
-            android:fontFamily="sans-serif-light"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="0"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            <TextView
+                android:id="@+id/team_b_score"
+                style="@style/teamScoreStyle"
+                android:text="0" />
 
-        <Button
-            android:onClick="addFoulForTeamA"
-            android:text="@string/foul"
-            style="@style/CustomButtonStyle" />
+            <Button
+                style="@style/CustomButtonStyle"
+                android:onClick="addGoalForTeamB"
+                android:text="@string/goal" />
 
-        <TextView
-            android:id="@+id/team_a_corner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="20dp"
-            android:fontFamily="sans-serif-light"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="0"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            <TextView
+                android:id="@+id/team_b_foul"
+                style="@style/teamStatsStyle"
+                android:text="0" />
 
-        <Button
-            android:layout_marginBottom="8dp"
-            android:onClick="addCornerForTeamA"
-            android:text="@string/corner"
-            style="@style/CustomButtonStyle" />
+            <Button
+                style="@style/CustomButtonStyle"
+                android:onClick="addFoulForTeamB"
+                android:text="@string/foul" />
+
+            <TextView
+                android:id="@+id/team_b_corner"
+                style="@style/teamStatsStyle"
+                android:text="0" />
+
+            <Button
+                style="@style/CustomButtonStyle"
+                android:layout_marginBottom="8dp"
+                android:onClick="addCornerForTeamB"
+                android:text="@string/corner" />
+        </LinearLayout>
     </LinearLayout>
 
-    <View
-        android:layout_width="2dp"
-        android:layout_height="match_parent"
-        android:layout_marginTop="16dp"
-        android:background="#FFFFFF" />
-
-    <LinearLayout
-        android:layout_width="0dp"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="@string/team_b"
-            android:textColor="#E0E0E0"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/team_b_score"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:fontFamily="sans-serif-light"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="0"
-            android:textColor="#FFFFFF"
-            android:textSize="56sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:onClick="addGoalForTeamB"
-            android:text="@string/goal"
-            style="@style/CustomButtonStyle" />
-
-        <TextView
-            android:id="@+id/team_b_foul"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="20dp"
-            android:fontFamily="sans-serif-light"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="0"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp" />
-
-        <Button
-            android:onClick="addFoulForTeamB"
-            android:text="@string/foul"
-            style="@style/CustomButtonStyle" />
-
-        <TextView
-            android:id="@+id/team_b_corner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="20dp"
-            android:fontFamily="sans-serif-light"
-            android:gravity="center"
-            android:padding="4dp"
-            android:text="0"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp" />
-
-        <Button
-            android:layout_marginBottom="8dp"
-            android:onClick="addCornerForTeamB"
-            android:text="@string/corner"
-            style="@style/CustomButtonStyle" />
-    </LinearLayout>
-</LinearLayout>
-
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="4dp"
-    android:onClick="resetScore"
-    android:text="@string/reset_all_stats" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:onClick="resetScore"
+        android:text="@string/reset_all_stats" />
 
 </RelativeLayout>

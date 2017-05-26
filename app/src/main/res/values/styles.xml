@@ -1,16 +1,52 @@
 <resources>
-<!-- Base application theme. -->
-<style name="AppTheme" parent="Theme.AppCompat.Light">
-    <!-- Primary theme color of the app (sets background color of app bar) -->
-    <item name="colorPrimary">#009800</item>
-    <!-- Background color of buttons in the app -->
-    <item name="colorButtonNormal">#00dd00</item>
-</style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#009800</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#00dd00</item>
+    </style>
 
     <style name="CustomButtonStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">24dp</item>
         <item name="android:layout_marginRight">24dp</item>
+    </style>
+
+    <style name="teamNameStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textColor">#E0E0E0</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="teamScoreStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="teamStatsStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">30sp</item>
     </style>
 </resources>
