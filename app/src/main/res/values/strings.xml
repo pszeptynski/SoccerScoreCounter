@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Soccer Score Counter</string>
+    <string name="reset_all_stats">Reset all statistics</string>
+    <string name="corner">Corner</string>
+    <string name="foul">Foul</string>
+    <string name="goal">GOAL!</string>
+    <string name="team_b">Team B</string>
+    <string name="team_a">Team A</string>
 </resources>

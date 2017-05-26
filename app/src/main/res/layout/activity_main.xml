@@ -25,7 +25,7 @@ tools:context="pl.carpecodicem.soccerscorecounter.MainActivity">
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Team A"
+            android:text="@string/team_a"
             android:textColor="#E0E0E0"
             android:textSize="14sp" />
 
@@ -48,7 +48,7 @@ tools:context="pl.carpecodicem.soccerscorecounter.MainActivity">
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:onClick="addGoalForTeamA"
-            android:text="GOAL!" />
+            android:text="@string/goal" />
 
         <TextView
             android:id="@+id/team_a_foul"
@@ -69,7 +69,7 @@ tools:context="pl.carpecodicem.soccerscorecounter.MainActivity">
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:onClick="addFoulForTeamA"
-            android:text="Foul" />
+            android:text="@string/foul" />
 
         <TextView
             android:id="@+id/team_a_corner"
@@ -91,7 +91,7 @@ tools:context="pl.carpecodicem.soccerscorecounter.MainActivity">
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:onClick="addCornerForTeamA"
-            android:text="Corner" />
+            android:text="@string/corner" />
     </LinearLayout>
 
     <View
@@ -114,7 +114,7 @@ tools:context="pl.carpecodicem.soccerscorecounter.MainActivity">
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Team B"
+            android:text="@string/team_b"
             android:textColor="#E0E0E0"
             android:textSize="14sp" />
 
@@ -137,7 +137,7 @@ tools:context="pl.carpecodicem.soccerscorecounter.MainActivity">
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:onClick="addGoalForTeamB"
-            android:text="GOAL!" />
+            android:text="@string/goal" />
 
         <TextView
             android:id="@+id/team_b_foul"
@@ -158,7 +158,7 @@ tools:context="pl.carpecodicem.soccerscorecounter.MainActivity">
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:onClick="addFoulForTeamB"
-            android:text="Foul" />
+            android:text="@string/foul" />
 
         <TextView
             android:id="@+id/team_b_corner"
@@ -180,7 +180,7 @@ tools:context="pl.carpecodicem.soccerscorecounter.MainActivity">
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:onClick="addCornerForTeamB"
-            android:text="Corner" />
+            android:text="@string/corner" />
     </LinearLayout>
 </LinearLayout>
 
@@ -191,6 +191,6 @@ tools:context="pl.carpecodicem.soccerscorecounter.MainActivity">
     android:layout_centerHorizontal="true"
     android:layout_marginBottom="4dp"
     android:onClick="resetScore"
-    android:text="Reset all statistics" />
+    android:text="@string/reset_all_stats" />
 
 </RelativeLayout>
