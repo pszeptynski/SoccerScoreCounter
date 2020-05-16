@@ -11,4 +11,4 @@ and manipulate them.
 
 ## Screenshot
 
-[app screenshot](./SoccerScoreCounter.png)
+[![app screenshot](https://raw.githubusercontent.com/pszeptynski/SoccerScoreCounter/master/SoccerScoreCounter.png)]
